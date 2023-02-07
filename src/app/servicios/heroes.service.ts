@@ -62,8 +62,14 @@ export class HeroesService {
 
   }
 
+  //Para la info de todo el array
   getHeroes(): Heroe[] {
     return this.heroes;
+  }
+
+  //Para la inf de un solo heroe
+  getHeroe(idx: number) {
+    return this.heroes[idx];
   }
 }
 
