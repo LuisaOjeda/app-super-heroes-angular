@@ -1,0 +1,29 @@
+<h1>Buscando: <small>{{termino}} </small></h1>
+<hr>
+
+<div class="card-group">
+
+  <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index;">
+    <img src={{heroe.img}} class="card-img-top" alt={{heroe.nombre}}>
+    <div class="card-body">
+      <h5 class="card-title">{{heroe.nombre}} </h5>
+      <p class="card-text">{{heroe.bio}} </p>
+      <hr>
+      <p class="card-text">{{heroe.aparicion}} </p>
+    </div>
+
+    <!-- Esta es una manera para mostrar inf de un solo heroe, este seria el enrutamiento por
+        medio d euna funcion y ya en el componente se llama el router, este se declara a una variable
+        y se retorna en la funcion
+    -->
+
+
+    <!-- Esta es una manera para mostrar inf de un solo heroe, este seria el enrutamiento con
+    routerLink -->
+    <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary">Ver mas ......</a> -->
+
+
+
+  </div>
+
+</div>
